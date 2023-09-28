@@ -42,3 +42,33 @@ Replace 192.168.0.154 with your headscale server IP address
 
 ![SCR-20230928-kwvz](https://github.com/ithakaa/headscale-ui-npm/assets/21322369/fc16bcb7-e451-409e-b882-75f8c81aab42)
 
+```
+proxy_buffer_size   128k;
+proxy_buffers   4 256k;
+proxy_busy_buffers_size   256k; 
+proxy_ssl_server_name on;
+location /web/ {
+    proxy_set_header        Host                $http_host;
+    proxy_set_header        X-Real-IP           $remote_addr;
+    proxy_set_header        X-Forwarded-For     $proxy_add_x_forwarded_for;
+    proxy_set_header        X-Forwarded-Proto   $scheme;
+    proxy_set_header Upgrade $http_upgrade;
+    proxy_set_header Connection \"upgrade\";
+    proxy_redirect http:// https://;
+    proxy_pass http://<headscale-ui-server>:8090/web/;
+}
+location / {
+    proxy_set_header        Host                $http_host;
+    proxy_set_header        X-Real-IP           $remote_addr;
+    proxy_set_header        X-Forwarded-For     $proxy_add_x_forwarded_for;
+    proxy_set_header        X-Forwarded-Proto   $scheme;
+    proxy_set_header Upgrade $http_upgrade;
+    proxy_set_header Connection \"upgrade\";
+    add_header Strict-Transport-Security "max-age=15552000; includeSubDomains" always;
+    proxy_redirect http:// https://;
+    proxy_buffering off;
+    proxy_intercept_errors  on;
+    proxy_http_version      1.1;
+    proxy_pass http://<headscale-ui-server>:8088/;
+  }
+```
