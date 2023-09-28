@@ -2,17 +2,17 @@
 
 Domain name "hsui.mydomina.net", this would resolve to the NPM server IP
 
-![SCR-20230928-kwqu](https://github.com/ithakaa/headscale-ui-npm/assets/21322369/78621975-6d7a-4671-9df9-ccad90de132a)
+![SCR-20230928-kwqu](https://github.com/ithakaa/headscale-ui-npm/assets/21322369/25282265-77f2-4899-95f9-6597abbb532b)
 
 Leave "Custome Locations" blank
 
-![SCR-20230928-kwsg](https://github.com/ithakaa/headscale-ui-npm/assets/21322369/3142290c-31af-4aa6-bd29-cc8c6aaa522a)
+![SCR-20230928-kwsg](https://github.com/ithakaa/headscale-ui-npm/assets/21322369/414435c9-0a6d-403b-af91-6dabe27f1d58)
 
 Select your SSL Cert
 
-![SCR-20230928-kwtt](https://github.com/ithakaa/headscale-ui-npm/assets/21322369/ce2f36d8-5865-457b-bbcf-c158e9ea9ce9)
+![SCR-20230928-kwtt](https://github.com/ithakaa/headscale-ui-npm/assets/21322369/740cf149-73c8-4262-85fc-516b320c908f)
 
 Replace 192.168.0.154 with your headscale server IP address
 
-![SCR-20230928-kwvz](https://github.com/ithakaa/headscale-ui-npm/assets/21322369/29ed185e-6527-46bc-b437-334062b3aec0)
+![SCR-20230928-kwvz](https://github.com/ithakaa/headscale-ui-npm/assets/21322369/fc16bcb7-e451-409e-b882-75f8c81aab42)
 
