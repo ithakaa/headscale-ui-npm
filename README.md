@@ -1,5 +1,7 @@
 # headscale-ui-npm
 
+Docker Compose
+
 ```
 version: '3.6'
 services:
@@ -21,6 +23,7 @@ services:
     ports:
       - 8090:80
 ```
+NPM
 
 Domain name "hsui.mydomin.net", this would resolve to the NPM server IP
 
