@@ -1,5 +1,29 @@
 # headscale-ui-npm
 
+```json
+{
+version: '3.6'
+services:
+  headscale:
+    container_name: headscale
+    image: headscale/headscale:latest
+    command: headscale serve
+    restart: unless-stopped
+    ports:
+      - '8089:9090'
+      - '8088:8080'
+    volumes:
+      - ./data:/etc/headscale
+      - ./config:/var/lib/headscale      
+  headscale-ui:
+    image: ghcr.io/gurucomputing/headscale-ui:latest
+    restart: unless-stopped
+    container_name: headscale-ui
+    ports:
+      - 8090:80
+}
+```
+
 Domain name "hsui.mydomin.net", this would resolve to the NPM server IP
 
 ![SCR-20230928-kwqu](https://github.com/ithakaa/headscale-ui-npm/assets/21322369/25282265-77f2-4899-95f9-6597abbb532b)
