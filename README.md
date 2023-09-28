@@ -1,4 +1,4 @@
-# headscale-ui-npm
+# headscale-ui with nginx proxy manager
 
 Docker Compose
 
@@ -23,7 +23,8 @@ services:
     ports:
       - 8090:80
 ```
-NPM
+
+Nginx Proxy Manager
 
 Domain name "hsui.mydomin.net", this would resolve to the NPM server IP
 
