@@ -1,7 +1,6 @@
 # headscale-ui-npm
 
-```json
-{
+```
 version: '3.6'
 services:
   headscale:
@@ -21,7 +20,6 @@ services:
     container_name: headscale-ui
     ports:
       - 8090:80
-}
 ```
 
 Domain name "hsui.mydomin.net", this would resolve to the NPM server IP
