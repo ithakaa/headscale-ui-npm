@@ -1,6 +1,6 @@
 # headscale-ui-npm
 
-Domain name "hsui.mydomina.net", this would resolve to the NPM server IP
+Domain name "hsui.mydomin.net", this would resolve to the NPM server IP
 
 ![SCR-20230928-kwqu](https://github.com/ithakaa/headscale-ui-npm/assets/21322369/25282265-77f2-4899-95f9-6597abbb532b)
 
