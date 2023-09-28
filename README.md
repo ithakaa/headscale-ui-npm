@@ -43,7 +43,7 @@ Replace 192.168.0.154 with your headscale server IP address
 ![SCR-20230928-kwvz](https://github.com/ithakaa/headscale-ui-npm/assets/21322369/fc16bcb7-e451-409e-b882-75f8c81aab42)
 
 
-This is the above npm advanced config for easy copy / paste, make sure you edit the "<headscale-ui-server>"
+This is the above npm advanced config for easy copy / paste, make sure you edit the "\<headscale-ui-server\>"
 ```
 proxy_buffer_size   128k;
 proxy_buffers   4 256k;
