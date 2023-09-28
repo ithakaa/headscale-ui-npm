@@ -4,7 +4,7 @@ Domain name "hsui.mydomin.net", this would resolve to the NPM server IP
 
 ![SCR-20230928-kwqu](https://github.com/ithakaa/headscale-ui-npm/assets/21322369/25282265-77f2-4899-95f9-6597abbb532b)
 
-Leave "Custome Locations" blank
+Leave "Custom Locations" blank
 
 ![SCR-20230928-kwsg](https://github.com/ithakaa/headscale-ui-npm/assets/21322369/414435c9-0a6d-403b-af91-6dabe27f1d58)
 
